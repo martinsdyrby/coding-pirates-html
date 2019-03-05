@@ -1,0 +1,16 @@
+ul#navigation {
+	background-color: grey;
+	color: white;
+	padding: 1rem
+}
+
+section {
+	padding: 2rem;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+section.active {
+	opacity: 1;
+
+}

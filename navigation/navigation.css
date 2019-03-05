@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	position: absolute;
+	visibility: hidden;
+}
+
+section.active {
+	position: static;
+	visibility: visible;
+}
+
+ul#navigation {
+	display: flex;
+	list-style: none;
+}
+
+ul#navigation li {
+	cursor: pointer;
+	margin: 0 1rem;
+}
