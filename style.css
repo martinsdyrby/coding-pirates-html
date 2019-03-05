@@ -14,3 +14,13 @@ section.active {
 	opacity: 1;
 
 }
+
+pre {
+	background-color: darkgray;
+	color: white;
+	padding: 1rem;
+}
+
+h2, h3 {
+	margin-top: 1rem;
+}
