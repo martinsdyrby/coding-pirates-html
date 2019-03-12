@@ -6,40 +6,79 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-	<ul id="navigation">
-		<li>HTML</li>
-		<li>Billeder</li>
-		<li>Tekst</li>
-		<li>YouTube videoer</li>
-	</ul>
+	<div class="header">
+		<img src="Forside-Logo.png" />
+		<ul id="navigation">
+			<li>Start</li>
+			<li>Tekst</li>
+			<li>Billeder</li>
+			<li>YouTube videoer</li>
+		</ul>		
+	</div>
 	<section>
 		<h1>HTML</h1>
-		<p>Hvis du vil starte en ny hjemmeside skal du lave en tekst fil med følgende tekst</p>
-		<pre>
-&lt;html&gt;
+		<p>Hvis du vil starte en ny hjemmeside skal du lave en tekst fil med følgende tekst:</p>
+		<pre>&lt;html&gt;
 	&lt;head&gt;
 		&lt;title&gt;&lt;/title&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
 
 	&lt;/body&gt;
-&lt;/html&gt;
-		</pre>
+&lt;/html&gt;</pre>
+		<p>Du kan lave filen i Visual Studio Code. Du skal gemme filen som en html fil. Det betyder at du skal huske at skrive .html efter filnavnet. F.eks <strong>hjemmeside.html</strong></p>
+		<p>For at se din hjemmeside, skal du åbne filen i en browser, f.eks. Chrome. Hvis du finder filen på din computer og dobbeltklikker den, så åbner den som regel i en browser.</p>
 		<h2>Titel på din hjemmeside</h2>
-		<p>Titlen på en hjemmeside kan man se oppe i browseren. Title på denne side er <strong>Coding Pirates HTML</strong></p>
-		<p>Få at ændre title på din hjemmeside skal du skrive den mellem &lt;title&gt; og &lt;/title&gt;</p>
+		<p>Titlen på en hjemmeside kan man se oppe i browseren. Title på denne side er <strong>Coding Pirates HTML</strong>. Du kan se det oppe i tab'en.</p>
+		<p>Få at ændre titlen på din hjemmeside skal du skrive den mellem &lt;title&gt; og &lt;/title&gt;</p>
 		<h3>Eksempel</h3>
 		<pre>&lt;title&gt;Min hjemmeside&lt;/title&gt;</pre>
 		<h2>Indhold på din hjemmeside</h2>
 		<p>Alt det du gerne vil vise på din hjemmeside som for eksempel tekst, billeder eller videoer, skal skrives mellem &lt;body&gt; og &lt;/body&gt;</p>
-
-	</section>
-	<section>
-		<h1>Billeder</h1>
+		<pre>&lt;body&gt;
+	Her er teksten på min hjemmeside
+&lt;/body&gt;</pre>
 	</section>
 	<section>
 		<h1>Tekst</h1>
+		<p>Hvis du vil have tekst på din hjemmeside, skal du bruge forskellig tags for at fortælle browseren hvordan den skal vise teksten.</p>
+		<p>Hvert tag skal have et åbne- og et lukke-tag. Det betyder at man skriver tag'et 2 gange og putte sin tekst ind imellem tag'et. Og det sidste tag skal have en / for at vise at det er et lukke-tag</p>
+		<h2>Overskrifter</h2>
+		<p>Hvis du vil have en overskfit på din hjemmeside er der 6 forskellige tags du kan bruge. De starter allesammen med h efterfulgt af et tal</p>
+		<h3>Eksempel på Overskrifter</h3>
+		<pre>
+&lt;h1&gt;Min overskrift&lt;/h1&gt;
+&lt;h2&gt;Min overskrift&lt;/h2&gt;
+&lt;h3&gt;Min overskrift&lt;/h3&gt;
+&lt;h4&gt;Min overskrift&lt;/h4&gt;
+&lt;h5&gt;Min overskrift&lt;/h5&gt;
+&lt;h6&gt;Min overskrift&lt;/h6&gt;
+		</pre>
+		<p>Det kommer til at se sådan her ud:</p>
+		<h1>Min overskrift</h1>
+		<h2>Min overskrift</h2>
+		<h3>Min overskrift</h3>
+		<h4>Min overskrift</h4>
+		<h5>Min overskrift</h5>
+		<h6>Min overskrift</h6>
 	</section>
+	<section>
+		<h1>Billeder</h1>
+		<p>Hvis du vil have billeder på din hjemmeside, skal du bruge <strong>&lt;img /&gt;</strong></p>
+		<p>Vær opmærksom på at man ikke bruger både et åbne og lukke tag som med de fleste tags. Her er <strong>&lt;img /&gt;</strong> lidt forskellig fra andre tags.</p>
+		<p>Først skal du finde stien til dit billede. Det kan enten være en url til et billede der allerede ligger på nettet. Eller du kan gemme billedet samme sted som du har din .html fil.</p>
+		<h3>Eksempel med url</h3>
+		<p>Her bruger vi logoet fra <a href="codingpirates.dk" target="_blank">codingpirates.dk</a>. Vi får fat i url'en til billedet, ved at besøge siden, højre-klikke på logoet og vælge Kopiér billedets webadresse</p>
+		<pre>&lt;img src="https://codingpirates.dk/wp-content/uploads/2016/09/Forside-Logo.png" /&gt;</pre>
+		<p>Hvis du indsætter det på din hjemmeside, ser det sådan her ud:</p>
+		<img src="https://codingpirates.dk/wp-content/uploads/2016/09/Forside-Logo.png" />
+		<h3>Eksempel med lokal fil</h3>
+		<p>På denne side er logoet blevet gemt ved siden af .html filen, så vi kan skrive det sådan her</p>
+		<pre>&lt;img src="Forside-Logo.png" /&gt;</pre>
+		<p>Det kommer til ens ud, den eneste forskel er hvor billedet bliver hentet fra.</p>
+		<img src="Forside-Logo.png" />
+	</section>
+
 	<section>
 		<h1>YouTube videoer</h1>
 	</section>

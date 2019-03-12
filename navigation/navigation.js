@@ -6,12 +6,17 @@
 		sections.forEach(function(section) {
 			section.classList.remove('active');
 		});
+		navigation.forEach(function(nav) {
+			nav.classList.remove('active');
+		});
 	};
 
 	var showSection = function(index) {
 		if (index < sections.length) {
 			var section = sections[index];
 			section.classList.add('active');
+			var nav = navigation[index];
+			nav.classList.add('active');
 		}
 	};
 

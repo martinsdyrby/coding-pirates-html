@@ -1,7 +1,16 @@
+* {
+	font-family: Arial, sans-serif;
+}
+
+.header { background-color: #000; }
+.header img { margin: 1rem 0 0 1rem; height: 30px; width: auto; }
+
 ul#navigation {
-	background-color: grey;
 	color: white;
 	padding: 1rem
+}
+ul#navigation li.active {
+	text-decoration: underline;
 }
 
 section {
@@ -16,9 +25,10 @@ section.active {
 }
 
 pre {
-	background-color: darkgray;
+	background-color: rgba(37,162,206,0.6);
 	color: white;
 	padding: 1rem;
+	margin: 0.5rem;
 }
 
 h2, h3 {
